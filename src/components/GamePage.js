@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './SecondPage.css';
+import './GamePage.css';
 import BurgerMenu from './BurgerMenu';
 
 function SecondPage() {

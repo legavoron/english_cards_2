@@ -9,14 +9,17 @@ function App() {
         <img src={logo} alt="english cards" className='logo'/>
       </div>
       <div className="button-container">
-        <Link to="/secondPage" className="button" style={{ textDecoration: 'none' }}>
-          Start
+        <Link to="/create" className="button" style={{ textDecoration: 'none' }}>
+          Create Card
         </Link>
         <Link to="/levels" className="button" style={{ textDecoration: 'none' }}>
           Choose Level
         </Link>
         <Link to="/language" className="button" style={{ textDecoration: 'none' }}>
           Choose Language
+        </Link>
+        <Link to="/secondPage" className="button" style={{ textDecoration: 'none' }}>
+          Start
         </Link>
       </div>
     </div>
