@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './LanguagePage.css';
+import BurgerMenu from './BurgerMenu';
 
 function LanguagePage() {
   const [activeBtn, setActiveBtn] = useState('ru');
@@ -10,6 +11,9 @@ function LanguagePage() {
 
   return (
     <div className="language-page">
+      <BurgerMenu/>
+      <h1 className='language'> Выберете язык</h1>
+      <div className='language_button-container'>
       <button
         className={activeBtn === 'ru' ? 'btn active' : 'btn'}
         onClick={() => handleBtnClick('ru')}
@@ -22,6 +26,7 @@ function LanguagePage() {
       >
         EN
       </button>
+      </div>
     </div>
   );
 }

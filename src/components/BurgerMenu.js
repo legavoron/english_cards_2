@@ -46,11 +46,11 @@ const BurgerMenu = () => {
       </div>
       {isOpen && (
         <div className="burger-links" ref={menuRef}>
-          <Link to="/">Start Page</Link>
-          <Link to="/second-page">Second Page</Link>
-          <Link to="/language-page">Language Page</Link>
-          <Link to="/levels-page">Levels Page</Link>
-          <Link to="/create-card">Create Card</Link>
+          <Link to="/">Главное меню</Link>
+          <Link to="/secondPage">Старт</Link>
+          <Link to="/levels">Выбрать уровни</Link>
+          <Link to="/language">Выбрать язык</Link>
+          <Link to="/create">Создать карточку</Link>
           <div className="close-icon" onClick={handleToggle}>
             <div className="close-line"></div>
           </div>
