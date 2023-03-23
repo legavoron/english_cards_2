@@ -14,6 +14,7 @@
 
 .language {
   margin-bottom: 5rem;
+  color: #333;
 }
 
 .language_button-container {
@@ -34,17 +35,17 @@
   border: none;
   border-radius: 4px;
   font-size: 60px;
-  color: #fff;
-  background-color: #333;
+  color: #F1F1F1;
+  background-color: #00bcd4;
   cursor: pointer;
   text-align: center;
+  transition: all 0.2s ease-in-out;
 }
 
-.btn.active {
-  background-color: #00bcd4;
+.btnActive {
+  background-color: #45C4B0;
   transform: scale(1.2);
 }
-
 
 @media (max-width: 760px) {
   .language_button-container {
@@ -61,14 +62,26 @@
 @media (max-width: 400px) {
   .btn {
     width: 34vw;
-    height: 20vw;
+    height: 24vw;
     margin: 10px;
     font-size: 34px;
   }
 }
 
 @media (orientation: landscape ) and (max-height: 500px) {
+
+  .language_button-container {
+    gap: 10px;
+  }
+
   .language {
     margin-bottom: 2rem;
+  }
+
+  .btn {
+    width: 30vh;
+    height: 24vh;
+    margin: 10px;
+    font-size: 26px;
   }
 }

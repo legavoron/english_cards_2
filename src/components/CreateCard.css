@@ -1,58 +1,136 @@
-.create-card-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+.createCard {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-image: url(../images/backImage.jpg);
+  background-size: no-repeat;
+  background-position: left;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+.createCard-title {
+  color: #333;
+  margin-bottom: 3rem;
+}
+
+.createCard_image-container {
+  width: 40vw;
+  max-width: 200px;
+  height: 40vw;
+  max-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 3rem;
+  border-radius: 15px;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  color: red;
+}
+
+.createCard_image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.createCard_error {
+  color: red;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.createCard input {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+.createCard input:focus {
+  outline: none;
+  box-shadow: 0 0 2px 1px #00bcd4;
+}
+
+.createCard select {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 18px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #fff;
+  background-image: none;
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  color: #333;
+  cursor: pointer;
+}
+
+.createCard select:focus {
+  outline: none;
+  box-shadow: 0 0 2px 1px #00bcd4;
+}
+
+.createCard button {
+  background-color: #13678A;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+@media(max-width: 700px) {
+  .createCard-title {
+    margin-bottom: 2rem;
+  }
+
+  .createCard_image-container {
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-height: 600px) and (orientation: landscape) {
+
+  .createCard-title {
+    margin: 10px;
   }
   
-  .create-card-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    background-color: #fff;
+  .createCard_image-container {
+  width: 80px;
+  max-width: 300px;
+  height: 80px;
+  max-height: 300px;
+  margin-bottom: 10px;
+  font-size: 8px;
   }
-  
-  .create-card-form h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+
+  .createCard input {
+    max-width: 400px;
+    margin-bottom: 5px;
+    padding: 5px;
   }
-  
-  .create-card-form label {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+
+  .createCard select {
+    max-width: 400px;
+    margin-bottom: 5px;
+    padding: 5px;
   }
-  
-  .create-card-form input {
-    width: 100%;
-    height: 40px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    padding: 5px 10px;
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-  }
-  
-  .create-card-form textarea {
-    width: 100%;
-    height: 100px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    padding: 5px 10px;
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-  }
-  
-  .create-card-form button {
-    width: 150px;
-    height: 40px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    cursor: pointer
-  }
+}
+

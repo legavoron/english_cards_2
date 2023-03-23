@@ -1,8 +1,14 @@
 .levels-page {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    background-image: url(../images/backImage.jpg);
+    background-size: no-repeat;
+    background-position: left;
+    background-size: cover;
+    box-sizing: border-box;
   }
   
   .levels-list {
@@ -27,11 +33,14 @@
     text-align: center;
   }
   
-  .level-button:hover {
-    transform: scale(1.05);
+  .level-button.active {
+    background-color: #00bcd4;
+    scale: 1.2;
   }
 
-  .level-button:active {
-    transform: scale(0.95);
+  @media (max-width: 1000px) {
+    .level-button {
+      max-width: 400px;
+      font-size: 1.4rem;
+    }
   }
-  
